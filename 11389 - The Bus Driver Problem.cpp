@@ -1,8 +1,7 @@
 #include<iostream>
 #include<set>
-#include<fstream>
 using namespace std;
-ofstream o("Text.txt");
+
 int main()
 {
 	int n, r, d;
@@ -25,7 +24,7 @@ int main()
 			morning.erase(it1);
 			evening.erase(it2);
 		}
-		o << ans*r << endl;
+		cout << ans*r << endl;
 	}
 	system("PAUSE");
 	return 0;
