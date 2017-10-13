@@ -19,8 +19,6 @@ int main()
 	temp[0] = V[0];
 	for (int i = 1; i < t; i++)
 	{
-
-
 		if (V[i] > temp[ans])
 			ans++, temp[ans] = V[i], lis[ans] = i, R[i] = lis[ans - 1];
 		else if (V[i] < temp[0]) temp[0] = V[i], lis[0] = i;
